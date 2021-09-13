@@ -1,0 +1,29 @@
+[package]
+name = "async-tokio"
+version = "0.1.0"
+authors = ["ajen <a839290570@163.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "*", features = ["full"] }
+url = "*"
+byte = "*"
+
+[[bin]]
+name = "echo"
+path = "src/echo/main.rs"
+
+[[bin]]
+name = "echo_udp"
+path = "src/echo_udp/main.rs"
+
+
+[[bin]]
+name = "conn"
+path = "src/conn/main.rs"
+
+[[bin]]
+name = "get"
+path = "src/simple_get/main.rs"
